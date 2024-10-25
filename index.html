@@ -36,15 +36,35 @@
         </fieldset>
 
 
+
+        <fieldset>
+            <label> Escolha sua foto de perfil: <input type="file" name="file" /></label>
+            <label> Qual sua data de nascimento:<input type="date" name="birthdate" required /></label>
+            <label>
+                Como você nos conheceu?
+                <select name="conhecer">
+                    <option value="">(Selecione um)</option>
+                    <option value="1">Instagram</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Boca a boca</option>
+                    <option value="4">Outro</option>
+                </select>
+            </label>
+            <label>
+                Fale um pouco mais sobre você:
+                <textarea name="bio" rows="3" cols="30" placeholder="Eu gosto de assistir séries..."></textarea>
+            </label>
+
+        </fieldset>
+
         <fieldset>
             <label>
                 <input type="checkbox" name="termos" class="inline" required /> Eu declaro que li e aceito os <a href="https://br.lipsum.com/"> Termos de Privacidade</a>
                 <input type="checkbox" name="termos" class="inline" required /> Eu declaro que li e aceito os <a href="https://br.lipsum.com/"> Termos de Uso</a>
 
             </label>
-
-
         </fieldset>
+        <input type="submit" value="Enviar" />
     </form>
 
     
