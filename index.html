@@ -12,14 +12,14 @@
 
     <h1>Crie sua Conta</h1>
     <p>É rápido e fácil</p>
-    <form action="https://br.lipsum.com/">
+    <form action="https://github.com/Boudenzin">
         <fieldset>
 
             <label>Digite seu nome completo: <input type='text' name='first-name' required /></label>
             <label>Digite seu email: <input type='text' name='email' required /></label>
             <label>Dê um nome ao seu usuário: <input type='text' name='user' required /></label>
-            <label>Digite sua senha: <input type='password' name='password' pattern="[a-zA-Z0-9!@#$%^&*()_+]{8,}" required /></label>
-            <label>Confirme sua senha: <input type='password' name='password' pattern="[a-zA-Z0-9!@#$%^&*()_+]{8,}" required /></label>
+            <label>Digite sua senha: <input type='password' name='password' pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()_+]{8,}$" required /></label>
+            <label>Confirme sua senha: <input type='password' name='password' pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()_+]{8,}$" required /></label>
             
 
         </fieldset>
@@ -59,9 +59,12 @@
 
         <fieldset>
             <label>
-                <input type="checkbox" name="termos" class="inline" required /> Eu declaro que li e aceito os <a href="https://br.lipsum.com/"> Termos de Privacidade</a>
-                <input type="checkbox" name="termos" class="inline" required /> Eu declaro que li e aceito os <a href="https://br.lipsum.com/"> Termos de Uso</a>
-
+                <input type="checkbox" name="termos-privacidade" class="inline" required /> 
+                Eu declaro que li e aceito os <a href="https://br.lipsum.com/">Termos de Privacidade</a>
+            </label>
+            <label>
+                <input type="checkbox" name="termos-uso" class="inline" required /> 
+                Eu declaro que li e aceito os <a href="https://br.lipsum.com/">Termos de Uso</a>
             </label>
         </fieldset>
         <input type="submit" value="Enviar" />
